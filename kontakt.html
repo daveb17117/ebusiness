@@ -11,20 +11,20 @@
 </head>
 <body>
 <div class="container">
-    <div class="center">
-        <div class="heading">Otto's Luxusresort</div>
-        <div class="arrow">
+    <div class="center top">
+        <div class="heading top">Otto's Luxusresort</div>
+        <div class="arrow top">
             <a id="showDescription" href="#">
                 <span class="fa fa-arrow-circle-down"></span>
             </a>
         </div>
     </div>
 
-    <div class="description">
+    <div class="description show">
         <div class="menu">
-            <div class="menu-item active"><a href="index.html">Home</a></div>
+            <div class="menu-item"><a href="index.html">Home</a></div>
             <div class="menu-item"><a href="angebot.html">Angebot</a></div>
-            <div class="menu-item"><a href="kontakt.html">Kontakt</a></div>
+            <div class="menu-item active"><a href="kontakt.html">Kontakt</a></div>
         </div>
 
         <div class="content">
@@ -39,14 +39,6 @@
 </div>
 <script>
     $('html').css('overflow', 'hidden');
-
-    $('#showDescription').click(function () {
-        $('.arrow a').addClass('notransition');
-        $('.arrow').addClass('top');
-        $('.center').addClass('top');
-        $('.heading').addClass('top');
-        $('.description').addClass('show');
-    });
 </script>
 </body>
 </html>

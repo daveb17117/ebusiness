@@ -6,7 +6,6 @@
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -15,6 +14,7 @@ html {
 body {
   margin: 0;
   background-image: url("../images/background.jpg");
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .center {
@@ -28,7 +28,7 @@ body {
 }
 
 .center.top{
-  margin-top: 10%;
+  margin-top: 6em;
 }
 
 .heading{
@@ -67,17 +67,22 @@ body {
 /* Hide Description first */
 .description{
   position: relative;
-  padding-top: 100vh;
-  color:white;
+  margin-top: 100vh;
+  color:black;
   z-index: -1;
-  font-size: 2em;
+  font-size: 1.5em;
   transition: all 1s;
+  height: 100%;
+}
+
+.container{
+  height: 100vh;
 }
 
 .description.show{
   position: relative;
-  padding-top: 22%;
-  color:white;
+  margin-top: 8em;
+  z-index: 0;
 }
 
 .vertical-center{
@@ -89,6 +94,43 @@ body {
   -moz-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+}
+
+.menu{
+  width:100%;
+  height:3.4em;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.32);
+  
+}
+
+.menu-item{
+  float:left;
+  padding: 1em 1em 1em 1em;  }
+
+.menu-item a{
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menu-item a:hover{
+  color:#ed5100;
+}
+
+.active a{
+  background: white;
+  color:black;
+}
+
+.menu-item.active{
+  background: white;
+}
+
+.content{
+  padding: 3em 3em 3em 3em;
+  background: white;
 }
 
 
