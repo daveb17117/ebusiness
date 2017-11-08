@@ -11673,12 +11673,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .center.top{
-  position: relative;
-  float: left;
   margin-top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
 }
 
 .heading{
@@ -11705,11 +11700,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 }
 
 .arrow a{
-  color: white
+  color: white;
+  transition: all .2s;
 }
 
 .arrow a:hover{
   color: #ed5100;
+  font-size: 1.1em;
 }
 
 /* Hide Description first */
@@ -11729,4 +11726,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .vertical-center{
   text-align: center;
+}
+
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
 }
