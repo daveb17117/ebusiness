@@ -10,7 +10,6 @@ html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -11698,7 +11697,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .arrow{
   font-size: 6em;
   text-align: center;
-  transition: all 1s;
+  transition: all .5s;
 }
 
 .arrow.top{
