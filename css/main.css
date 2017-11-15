@@ -219,9 +219,10 @@ footer{
   padding: 0.5em 0 1em 0;
 }
 
-.quote::first-letter{
+.quote blockquote::first-letter{
   font-size: 2em;
   margin-right: 0.05em;
+
 }
 
 .prize{

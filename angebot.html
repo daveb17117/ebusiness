@@ -154,12 +154,15 @@
 </body>
 <script>
     $(".slideshow").each(function () {
-        console.log($(this));
         $show = $(this);
         $(this).find("div:gt(0)").hide();
         // Set height
         $(this).height($(this).find("div:visible").height());
         // Slide
+        slide($show);
+    });
+
+    function slide($show) {
         setInterval(function() {
             $show.find("div:first")
                 .fadeOut(1000)
@@ -168,7 +171,7 @@
                 .end()
                 .appendTo($show);
         },  3000);
-    });
+    }
 
 
 </script>
