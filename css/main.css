@@ -10,6 +10,19 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.logo_container{
+  text-align: center;
+}
+
+.logo{
+  height: 20em;
+  transition: all 1s;
+}
+
+.logo.top{
+  height:6em;
+}
+
 .center {
   position: relative;
   float: left;

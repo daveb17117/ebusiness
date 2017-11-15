@@ -12,7 +12,12 @@
 <body>
 <div class="container">
     <div class="center">
+        <div class="logo_container">
+            <img class="logo" src="images/logo.png" alt="Kein Logo vorhanden">
+        </div>
+        <!--
         <div class="heading">Otto's Luxusresort</div>
+        -->
         <div class="arrow">
             <a id="showDescription">
                 <span class="fa fa-arrow-circle-down"></span>
@@ -47,6 +52,7 @@
         $('html').css('overflow-y', 'scroll');
         $('.arrow a').addClass('notransition');
         $('.arrow').addClass('top');
+        $('.logo').addClass('top');
         $('.center').addClass('top');
         $('.heading').addClass('top');
         $('.description').addClass('show');
