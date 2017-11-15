@@ -155,17 +155,21 @@
 </footer>
 </body>
 <script>
-    $(".slideshow").each(function () {
-        $show = $(this);
-        // Set height
-        console.log($(this).find("div:first").height());
-        $(this).height($(this).find("div:first").height());
-        // Hide all but one
-        $(this).find("div:gt(0)").hide();
-        // Slide
-        slide($show);
-    });
+    $(document).ready(function () {
+        $shows = $(".slideshow");
+        $shows.find("div").css('position','absolute');
+        $shows.each(function () {
+            $show = $(this);
+            // Set height
+            console.log($(this).find("div:first").height());
+            $(this).height($(this).find("div:first").height());
+            // Hide all but one
+            $(this).find("div:gt(0)").hide();
+            // Slide
+            slide($show);
+        });
 
+    });
     function slide($show) {
         setInterval(function() {
             $show.find("div:first")

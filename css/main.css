@@ -209,14 +209,6 @@ footer{
     height: auto;
 }
 
-.slideshow div{
-    position: absolute;
-}
-
-.slideshow img.image{
-
-}
-
 .image{
   width: 100%;
   padding-top: 2em;
