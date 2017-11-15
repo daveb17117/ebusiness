@@ -157,9 +157,10 @@
 <script>
     $(".slideshow").each(function () {
         $show = $(this);
-        $(this).find("div:gt(0)").hide();
         // Set height
-        $(this).height($(this).find("div").height());
+        $(this).height($(this).find("div:first").height());
+        // Hide all but one
+        $(this).find("div:gt(0)").hide();
         // Slide
         slide($show);
     });
