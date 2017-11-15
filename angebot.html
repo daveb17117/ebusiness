@@ -157,11 +157,11 @@
 <script>
     $(document).ready(function () {
         $shows = $(".slideshow");
-        var height = $shows.first().find("div").height();
-        $shows.find("div").css('position','absolute');
         $shows.each(function () {
             $show = $(this);
             // Set height
+            var height = $show.find("div").first().height();
+            $show.find("div").css('position','absolute');
             $(this).height(height);
             // Hide all but one
             $(this).find("div:gt(0)").hide();
