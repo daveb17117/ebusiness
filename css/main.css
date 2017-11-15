@@ -14,6 +14,18 @@ body {
   text-align: center;
 }
 
+.logo_container div.text{
+  float:right;
+  font-size: 0;
+  font-weight: bold;
+  transition: all 1s;
+}
+
+.logo_container.top div.text{
+  font-size: 3.9em;
+  margin-left: 0.3em;
+}
+
 .logo{
   height: 20em;
   transition: all 1s;
@@ -36,6 +48,8 @@ body {
 .center.top{
   margin-top: 6em;
 }
+
+/* This is if you only want a text as Logo */
 
 .heading{
   border: 10px solid white;
@@ -194,6 +208,7 @@ footer{
 
 .quote::first-letter{
   font-size: 2em;
+  margin-right: 0.05em;
 }
 
 .prize{
