@@ -196,6 +196,19 @@ footer{
   background: transparent; /* make scrollbar transparent */
 }
 
+.slideshow{
+    position:relative;
+    height: auto;
+}
+
+.slideshow div{
+    position: absolute;
+}
+
+.slideshow img.image{
+
+}
+
 .image{
   width: 100%;
   padding-top: 2em;

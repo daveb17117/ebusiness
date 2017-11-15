@@ -78,7 +78,17 @@
 
             <!-- Doppelzimmer -->
             <h2><span>Doppelzimmer</span></h2>
-            <img class="image" src="images/doppelzimmer_1.jpg" alt="Bild nicht gefunden">
+
+            <div class="slideshow">
+                <div>
+                    <img class="image" src="images/doppelzimmer_1.jpg" alt="Bild nicht gefunden">
+
+                </div>
+                <div>
+                    <img class="image" src="images/doppelzimmer_2.jpg" alt="Bild nicht gefunden">
+
+                </div>
+            </div>
 
             <div class="quote">
                 <blockquote>Die Richtung Natur ausgerichteten Doppelzimmer sind perfekt geeignet für Paare, die Ruhe für sich haben möchten. Das Badezimmer bietet einen hohen Konform und verfügt neben dem Doppelwaschbecken über eine grosse Badewanne. Den Paaren sollte es für die Erholung an nichts fehlen. </blockquote>
@@ -103,7 +113,11 @@
 
             <!-- Luxus-Suite -->
             <h2><span>Luxus-Suite</span></h2>
-            <img class="image" src="images/luxus_1.jpg" alt="Bild nicht gefunden">
+            <div class="slideshow">
+                <div><img class="image" src="images/luxus_1.jpg" alt="Bild nicht gefunden"></div>
+                <div><img class="image" src="images/luxus_2.jpg" alt="Bild nicht gefunden"></div>
+                <div><img class="image" src="images/luxus_3.jpg" alt="Bild nicht gefunden"></div>
+            </div>
 
             <div class="quote">
                 <blockquote>Unsere Luxus-Suite bietet ein grosses Badezimmer mit Dampfdusche und Badewanne mit Massagedüsen. Weiter soll der grosse Balkon zum Verweilen an der frischen Luft einladen. Gerne gehen wir bei weiteren Wünschen auf Sie ein. </blockquote>
@@ -138,4 +152,24 @@
     <p>&copy; 2017, Design by David Bösiger</p>
 </footer>
 </body>
+<script>
+    $(".slideshow").each(function () {
+        console.log($(this));
+        $show = $(this);
+        $(this).find("div:gt(0)").hide();
+        // Set height
+        $(this).height($(this).find("div:visible").height());
+        // Slide
+        setInterval(function() {
+            $show.find("div:first")
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo($show);
+        },  3000);
+    });
+
+
+</script>
 </html>
