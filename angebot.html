@@ -159,7 +159,7 @@
         $show = $(this);
         $(this).find("div:gt(0)").hide();
         // Set height
-        $(this).height($(this).find("div:visible").height());
+        $(this).height($(this).find("div").height());
         // Slide
         slide($show);
     });
