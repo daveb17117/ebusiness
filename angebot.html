@@ -158,6 +158,7 @@
     $(".slideshow").each(function () {
         $show = $(this);
         // Set height
+        console.log($(this).find("div:first").height());
         $(this).height($(this).find("div:first").height());
         // Hide all but one
         $(this).find("div:gt(0)").hide();
