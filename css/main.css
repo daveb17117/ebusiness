@@ -194,11 +194,69 @@ footer{
 }
 
 ul{
-
+  margin-left: 1em;
 }
 
 li{
+  font-style: italic;
+}
 
+.inputhalf{
+  width: 50%;
+  padding: 0 1em 0 1em;
+  float:left;
+}
+
+
+.input, .submitbutton{
+  width: 100%;
+  padding: 0 1em 0 1em;
+
+}
+
+.submitbutton{
+  margin-top: 1em;
+}
+
+.submitbutton > button{
+  width: 20%;
+  background-color: #ed5100;;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitbutton > button:hover{
+  background-color: #e44e00;;
+
+}
+
+input, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus{
+  outline: none !important;
+  border:1px solid #e44e00;;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
+}
+
+
+.input > label, .inputhalf > label{
+  margin-top: 1em;
+}
+
+.contactform > form{
+  margin-top: -1em;
 }
 
 
