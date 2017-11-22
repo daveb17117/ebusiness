@@ -190,6 +190,20 @@ h2 span {
   padding:0 10px;
 }
 
+h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #5b5b5b;
+  line-height: 0.1em;
+  margin: 4em 0 2em 0;
+  font-size:1em;
+}
+
+h3 span {
+  background:#fff;
+  padding:0 10px;
+}
+
 footer{
   z-index: -1;
   position: fixed;
